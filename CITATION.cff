@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "MG²-RAG: Multi-Granularity Graph for Multimodal Retrieval-Augmented Generation"
+message: "If you use this code, please cite the MG²-RAG paper."
+type: software
+authors:
+  - family-names: Dai
+    given-names: Sijun
+  - family-names: Huang
+    given-names: Qiang
+  - family-names: You
+    given-names: Xiaoxing
+  - family-names: Yu
+    given-names: Jun
+repository-code: "https://github.com/Daboolu/MG2-RAG"
+url: "https://daboolu.github.io/MG2-RAG/"
+identifiers:
+  - type: url
+    value: "https://arxiv.org/abs/2604.04969"
+    description: "arXiv:2604.04969"

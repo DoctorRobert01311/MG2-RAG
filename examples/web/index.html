@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MG2-RAG paper and interactive multimodal graph visualization">
+  <title>MG²-RAG · Paper & Interactive Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../../README.md">MG²-RAG: Multi-Granularity Graph for Multimodal Retrieval-Augmented Generation</a>
+    <nav><a href="#framework">Framework</a><a href="#graph-demo">Graph</a><a href="#case-studies">Case Studies</a><a href="https://github.com/Daboolu/MG2-RAG">Code</a><a href="https://arxiv.org/abs/2604.04969">arXiv</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MULTIMODAL RETRIEVAL-AUGMENTED GENERATION</p>
+        <h1>MG²-RAG</h1>
+        <h2>Multi-Granularity Graph for Multimodal Retrieval-Augmented Generation</h2>
+        <p class="lead">A lightweight framework that preserves textual structure and fine-grained visual evidence in a unified multimodal graph, then retrieves across four semantic granularities with graph propagation.</p>
+        <div class="hero-actions"><a class="primary" href="https://github.com/Daboolu/MG2-RAG">Code ↗</a><a class="secondary" href="https://arxiv.org/abs/2604.04969">arXiv Paper ↗</a></div>
+        <div class="authors">
+          <p><span>Sijun Dai<sup>1,†</sup></span><span>Qiang Huang<sup>1,†</sup></span><span>Xiaoxing You<sup>2</sup></span><span>Jun Yu<sup>1,*</sup></span></p>
+          <small><sup>1</sup> Harbin Institute of Technology (Shenzhen) &nbsp; <sup>2</sup> Hangzhou Dianzi University</small>
+          <small><sup>†</sup> Equal contribution &nbsp; <sup>*</sup> Corresponding author</small>
+        </div>
+      </div>
+      <div class="contribution-card">
+        <div class="metric"><span class="number">43.3×</span><b>average construction speedup</b></div>
+        <hr>
+        <div class="metric"><span class="number">23.9×</span><b>average cost reduction</b></div>
+        <p>Evaluated on retrieval, knowledge-based VQA, multimodal reasoning, and crisis classification.</p>
+      </div>
+    </section>
+
+    <section id="graph-demo" class="graph-demo-section">
+      <div class="section-heading"><h2>Multi-Granularity Graph Case</h2><p>Solid nodes form the PPR graph. Dashed sentence and object nodes visualize auxiliary retrieval pivots and their aggregation paths.</p></div>
+      <div class="workspace">
+        <aside class="control-panel">
+          <div><h3>Layers</h3><p>Filter evidence types or select a node for details.</p></div>
+          <div id="filters" class="filters"></div>
+          <div class="edge-legend"><span><i class="contextual"></i>Contextual</span><span><i class="semantic"></i>Semantic</span><span><i class="grounding"></i>Grounding</span><span><i class="retrieval"></i>Retrieval / aggregation</span></div>
+          <button id="reset-view" type="button">Reset view</button>
+        </aside>
+        <div id="graph-shell" class="graph-shell">
+          <svg id="graph" role="img" aria-label="Interactive MG2-RAG heterogeneous graph"><defs><filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrowhead" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="context-stroke"/></marker></defs><g id="viewport"><g id="edges"></g><g id="nodes"></g></g></svg>
+          <div class="graph-hint">Drag nodes · scroll to zoom · drag canvas to pan</div>
+        </div>
+        <aside id="inspector" class="inspector" aria-live="polite"><div class="empty-inspector"><span>＋</span><p>Select a node</p></div></aside>
+      </div>
+    </section>
+
+    <section id="example" class="example-section">
+      <div class="section-heading"><h2>Graph Retrieval Example</h2><p>Multimodal query signals activate the unified graph and rank the supporting chunk first.</p></div>
+      <div class="question-banner"><span>Question</span><strong>How many days does the gestation of this animal take?</strong><div><small>Generated answer</small><b>180 days</b></div></div>
+      <div class="results">
+        <article class="ranking-card"><div class="mini-heading"><div><p class="eyebrow">PPR OUTPUT</p><h3>Retrieved documents</h3></div><b>Recall@1 = 1.0</b></div><div id="ranking"></div></article>
+        <article class="evidence-card"><p class="eyebrow">RETRIEVED EVIDENCE</p><blockquote>“Gestation lasts <mark>six to seven months</mark>, following which a single calf is born and immediately concealed in cover.”</blockquote><div class="generation"><span>Qwen3.6 generation</span><strong>180</strong><small>4 completion tokens · finish: stop</small></div></article>
+      </div>
+    </section>
+
+    <section id="framework" class="paper-figure">
+      <div class="section-heading"><h2>Framework Overview</h2><p>Construction aligns text entities with visual regions. Retrieval activates evidence from chunks, sentences, images and objects before propagating relevance over the unified graph.</p></div>
+      <div class="figure-frame"><img src="../../assets/figures/framework.png" alt="Complete MG2-RAG framework showing multimodal graph construction and retrieval"></div>
+    </section>
+
+    <section id="case-studies" class="case-study-section">
+      <div class="section-heading"><h2>Knowledge-Based VQA Cases</h2><p>Retrieved multimodal evidence supports entity recognition, factual grounding and cross-modal alignment.</p></div>
+      <article class="case-figure"><img src="../../assets/figures/vqa-casestudy-1.png" alt="VQA case studies covering a bridge, bird, lake, and edible plant"></article>
+      <article class="case-figure"><img src="../../assets/figures/vqa-casestudy-2.png" alt="VQA case studies covering plant source, building location, bridge length, and building designer"></article>
+    </section>
+
+    <section class="efficiency-section">
+      <div class="section-heading"><h2>Construction Efficiency</h2><p>Lightweight textual structure extraction and entity-driven visual grounding reduce construction time and monetary cost.</p></div>
+      <div class="figure-frame"><img src="../../assets/figures/efficiency.png" alt="Graph construction time and cost comparison across five multimodal datasets"></div>
+    </section>
+  </main>
+  <footer><span>MG²-RAG · 2026</span><span>Paper, source, and machine-readable examples are included in this repository.</span></footer>
+  <script src="graph-data.js"></script><script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "documents": [
+    {
+      "id": "Q132576",
+      "title": "Impala",
+      "text": "Impala. The impala is a medium-sized antelope found in eastern and southern Africa. It was first described by the German zoologist Hinrich Lichtenstein. The impala inhabits woodlands and savannas, where it browses and grazes. Gestation lasts six to seven months, following which a single calf is born and immediately concealed in cover. The International Union for Conservation of Nature lists the impala as least concern.",
+      "image": "examples/data/impala_demo/kb_image.jpg"
+    },
+    {
+      "id": "Q173651",
+      "title": "African wild dog",
+      "text": "African wild dog. The African wild dog is a wild canine native to sub-Saharan Africa. It is a highly social and specialized pack hunter with a mottled coat and large rounded ears. Packs usually occupy savanna and open woodland habitats.",
+      "image": null
+    },
+    {
+      "id": "Q5368484",
+      "title": "Elymus hystrix",
+      "text": "Elymus hystrix. Elymus hystrix is a perennial grass native to eastern North America. It grows in deciduous woods and shaded slopes and is commonly known as bottlebrush grass because of its distinctive seed heads.",
+      "image": null
+    },
+    {
+      "id": "Q178185",
+      "title": "Heat engine",
+      "text": "Heat engine. A heat engine converts thermal energy into mechanical work by moving energy from a warmer source to a cooler sink. Its efficiency is constrained by the temperatures of the source and sink.",
+      "image": null
+    },
+    {
+      "id": "Q1510231",
+      "title": "Betula nigra",
+      "text": "Betula nigra. Betula nigra, commonly called river birch, is a deciduous tree native to the eastern United States. It often grows on floodplains and along riverbanks and is recognized by its peeling bark.",
+      "image": null
+    }
+  ],
+  "queries": [
+    {
+      "id": "infoseek_val_00000002",
+      "question": "How many days does the gestation of this animal take?",
+      "image": "examples/data/impala_demo/query_image.jpg",
+      "gold_document_ids": ["Q132576"],
+      "answers": ["180", "180 days"]
+    }
+  ]
+}

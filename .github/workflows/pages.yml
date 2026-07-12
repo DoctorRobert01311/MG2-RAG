@@ -1,0 +1,50 @@
+name: Deploy Project Page
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare site
+        run: |
+          mkdir -p _site/examples/web _site/examples/showcase _site/assets
+          cp examples/web/pages-index.html _site/index.html
+          cp examples/web/index.html _site/examples/web/index.html
+          cp examples/web/styles.css _site/examples/web/styles.css
+          cp examples/web/app.js _site/examples/web/app.js
+          cp examples/web/graph-data.js _site/examples/web/graph-data.js
+          cp -R examples/showcase/. _site/examples/showcase/
+          cp -R assets/figures _site/assets/figures
+          touch _site/.nojekyll
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,12 @@
+{
+  "query_id": "infoseek_val_00000002",
+  "model": "Qwen3.6-35B-A3B-FP8",
+  "question": "How many days does the gestation of this animal take?",
+  "prediction": "180",
+  "retrieved_doc_ids": ["Q132576", "Q173651", "Q5368484"],
+  "usage": {
+    "prompt_tokens": 1129,
+    "completion_tokens": 4,
+    "finish_reason": "stop"
+  }
+}

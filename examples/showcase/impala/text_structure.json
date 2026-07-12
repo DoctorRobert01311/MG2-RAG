@@ -1,0 +1,16 @@
+{
+  "document_id": "Q132576",
+  "title": "Impala",
+  "selected_entities": {
+    "Impala": "PERSON",
+    "Africa": "GPE",
+    "Hinrich Lichtenstein": "PERSON",
+    "The International Union for Conservation of Nature": "ORG",
+    "IUCN": "ORG"
+  },
+  "retrieval_relevant_sentence": "Gestation lasts six to seven months, following which a single calf is born and immediately concealed in cover.",
+  "relations": [
+    ["Kaokoland", "located_in", "Namibia"],
+    ["The International Union for Conservation of Nature", "is_also", "IUCN"]
+  ]
+}

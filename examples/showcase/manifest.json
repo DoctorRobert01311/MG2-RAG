@@ -1,0 +1,24 @@
+{
+  "primary_case": {
+    "name": "Impala knowledge retrieval",
+    "query_id": "infoseek_val_00000002",
+    "question": "How many days does the gestation of this animal take?",
+    "query_image": "impala/query_image.jpg",
+    "gold_document_id": "Q132576",
+    "knowledge_base_image": "impala/kb_image.jpg",
+    "segmented_object": "impala/segmented_object.png",
+    "grounding": {
+      "entity": "impala",
+      "confidence": 0.6972,
+      "box_xyxy": [31, 7, 248, 247]
+    },
+    "retrieval": {
+      "gold_rank": 1,
+      "score": 0.1291668713092804,
+      "top_document_ids": ["Q132576", "Q173651", "Q5368484", "Q178185", "Q1510231"]
+    },
+    "retrieved_evidence": "Gestation lasts six to seven months.",
+    "generated_answer": "180",
+    "dataset_annotation": {"wikidata": 6.75, "range": [6.5, 7.0]}
+  }
+}

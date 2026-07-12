@@ -1,0 +1,13 @@
+{
+  "query_id": "infoseek_val_00000002",
+  "question": "How many days does the gestation of this animal take?",
+  "gold_document_id": "Q132576",
+  "gold_rank": 1,
+  "top_k": [
+    {"rank": 1, "document_id": "Q132576", "title": "Impala", "ppr_score": 0.1291668713092804},
+    {"rank": 2, "document_id": "Q173651", "title": "African wild dog", "ppr_score": 0.037007760256528854},
+    {"rank": 3, "document_id": "Q5368484", "title": "Elymus hystrix", "ppr_score": 0.027421073988080025},
+    {"rank": 4, "document_id": "Q178185", "title": "Heat engine", "ppr_score": 0.02199431136250496},
+    {"rank": 5, "document_id": "Q1510231", "title": "Betula nigra", "ppr_score": 0.017249971628189087}
+  ]
+}
