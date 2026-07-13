@@ -33,6 +33,7 @@ jobs:
           cp examples/web/styles.css _site/examples/web/styles.css
           cp examples/web/app.js _site/examples/web/app.js
           cp examples/web/graph-data.js _site/examples/web/graph-data.js
+          cp examples/web/eccv-2026-logo.svg _site/examples/web/eccv-2026-logo.svg
           cp -R examples/showcase/. _site/examples/showcase/
           cp -R assets/figures _site/assets/figures
           touch _site/.nojekyll
