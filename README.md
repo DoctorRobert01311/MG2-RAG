@@ -1,4 +1,9 @@
-# MG²-RAG
+<p align="center">
+  <a href="https://daboolu.github.io/MG2-RAG/">
+    <img src="https://svg-banners.vercel.app/api?type=origin&amp;text1=MG%C2%B2-RAG%20%28ECCV'26%29%20%F0%9F%8E%89&amp;text2=Multi-Granularity%20Graph%20for%20Multimodal%20Retrieval-Augmented%20Generation&amp;width=800&amp;height=210">
+  </a>
+</p>
+
 
 Official implementation of **MG²-RAG: Multi-Granularity Graph for Multimodal
 Retrieval-Augmented Generation**.
@@ -148,14 +153,11 @@ with lightweight parsing and entity-driven visual grounding.
 ## Citation
 
 ```bibtex
-@misc{dai2026mg2ragmultigranularitygraphmultimodal,
+@inproceedings{dai2026mg2rag,
   title={MG$^2$-RAG: Multi-Granularity Graph for Multimodal Retrieval-Augmented Generation},
   author={Sijun Dai and Qiang Huang and Xiaoxing You and Jun Yu},
+  booktitle={Proceedings of the 19th European Conference on Computer Vision (ECCV)},
   year={2026},
-  eprint={2604.04969},
-  archivePrefix={arXiv},
-  primaryClass={cs.IR},
-  url={https://arxiv.org/abs/2604.04969},
 }
 ```
 
