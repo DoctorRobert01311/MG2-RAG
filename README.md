@@ -13,8 +13,10 @@ Retrieval-Augmented Generation**.
 <sup>†</sup> Equal contribution · <sup>*</sup> Corresponding author
 
 [[Project Page](https://daboolu.github.io/MG2-RAG/)]
-[[arXiv Paper](https://arxiv.org/abs/2604.04969)]
+[[Paper](https://arxiv.org/abs/2604.04969)]
 [[Code](https://github.com/Daboolu/MG2-RAG)]
+[[Slides](https://drive.google.com/file/d/1Y3UbiskGVYvOQo-8L5vb9iaqeCc2z3-v/view?usp=drive_link)]
+[[Video](https://drive.google.com/file/d/1Q6JsmeLi0vbGvQ9irAbTJMJbgB11xUgJ/view?usp=drive_link)]
 
 ![MG2-RAG framework](assets/figures/framework.png)
 

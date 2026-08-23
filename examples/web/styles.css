@@ -26,7 +26,7 @@ main { width:min(1080px,calc(100% - 36px)); margin:auto; }
 h1 { color:var(--ink); font-size:clamp(48px,6vw,76px); line-height:.84; letter-spacing:-.06em; margin:0; }
 .hero h2 { color:var(--ink); font-size:clamp(20px,2.2vw,28px); line-height:1.18; letter-spacing:-.035em; max-width:700px; margin:24px 0 16px; overflow-wrap:anywhere; }
 .lead { max-width:700px; font-size:14px; line-height:1.6; color:var(--muted); }
-.hero-actions { display:flex; gap:10px; margin:24px 0; }
+.hero-actions { display:flex; flex-wrap:wrap; gap:10px; margin:24px 0; }
 .hero-actions a { padding:12px 18px; border-radius:10px; text-decoration:none; font-size:13px; font-weight:750; }
 .hero-actions .primary { background:var(--blue); color:white; box-shadow:0 10px 25px rgba(38,119,216,.2); }
 .hero-actions .secondary { color:var(--blue); border:1px solid #c8def2; background:white; }
