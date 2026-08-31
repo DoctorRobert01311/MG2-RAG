@@ -15,6 +15,7 @@ Retrieval-Augmented Generation**.
 [[Project Page](https://daboolu.github.io/MG2-RAG/)]
 [[Paper](https://arxiv.org/abs/2604.04969)]
 [[Code](https://github.com/Daboolu/MG2-RAG)]
+[[Poster](https://eccv.ecva.net/virtual/2026/poster/3411)]
 [[Slides](https://drive.google.com/file/d/1Y3UbiskGVYvOQo-8L5vb9iaqeCc2z3-v/view?usp=drive_link)]
 [[Video](https://drive.google.com/file/d/1Q6JsmeLi0vbGvQ9irAbTJMJbgB11xUgJ/view?usp=drive_link)]
 
@@ -151,6 +152,14 @@ under [`examples/web`](./examples/web) and
 MG²-RAG reduces graph construction time and cost across E-VQA, InfoSeek,
 ScienceQA, and the two CrisisMMD tasks by replacing MLLM-based graph extraction
 with lightweight parsing and entity-driven visual grounding.
+
+## Acknowledgments
+
+We thank the authors of [EchoSight](https://arxiv.org/abs/2407.12735) and
+[VaLiK](https://arxiv.org/abs/2503.12972) for their valuable work. Our E-VQA
+and InfoSeek dataset preparation, data loading, and experimental settings
+mainly follow EchoSight, while the corresponding ScienceQA and CrisisMMD
+settings mainly follow VaLiK.
 
 ## Citation
 
