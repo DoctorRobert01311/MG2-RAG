@@ -18,6 +18,8 @@ def parse_args():
     )
     parser.add_argument("--wiki-json", required=True)
     parser.add_argument("--test-json", required=True)
+    # Download the image Parquet files from AToMiC-Images-v0.2:
+    # https://huggingface.co/datasets/TREC-AToMiC/AToMiC-Images-v0.2
     parser.add_argument("--parquet-dir", required=True)
     parser.add_argument("--output-dir", default="evqa_data_100k")
     parser.add_argument("--target-count", type=int, default=100_000)

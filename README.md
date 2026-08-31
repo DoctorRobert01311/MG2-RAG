@@ -155,11 +155,17 @@ with lightweight parsing and entity-driven visual grounding.
 
 ## Acknowledgments
 
-We thank the authors of [EchoSight](https://arxiv.org/abs/2407.12735) and
+**Datasets.** We thank the authors of
+[EchoSight](https://arxiv.org/abs/2407.12735) and
 [VaLiK](https://arxiv.org/abs/2503.12972) for their valuable work. Our E-VQA
 and InfoSeek dataset preparation, data loading, and experimental settings
 mainly follow EchoSight, while the corresponding ScienceQA and CrisisMMD
 settings mainly follow VaLiK.
+
+**Code.** We also thank the authors of
+[HippoRAG](https://arxiv.org/abs/2405.14831) and
+[From RAG to Memory](https://arxiv.org/abs/2502.14802), whose work provided
+valuable inspiration for our implementation.
 
 ## Citation
 
