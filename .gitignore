@@ -27,3 +27,4 @@ clear_outputs_and_logs.sh
 .pytest_cache/
 */logs
 logs_*.txt
+.DS_Store
