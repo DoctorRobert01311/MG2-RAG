@@ -44,6 +44,10 @@ git commit -m "docs: record my understanding of Git workflow"
 git push -u origin study/day01-git
 ```
 
-我的理解：（在这里写一句话）
+我的理解：Git是一种文件管理工具，我们通过相应的指令，将文件扒到线上仓库，然后再进行相应的记录，这里每一条记录都是会实时显示我们做的更正
+          我的理解：分支共享之前的提交历史，之后可以独立修改和提交。
 
 注意：不要提交密钥、.env、模型权重或下载的数据。今天先完成 Git 工作流，不需要运行 main.py 或安装 CUDA。
+
+
+/Users/aligncsphd/Documents/Codex/2026-10-29/referenced-chatgpt-conversation-this-is-an/outputs/MG2-RAG/study-notes/01-git-vscode.md
